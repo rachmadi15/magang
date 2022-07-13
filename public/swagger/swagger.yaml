@@ -1,0 +1,88 @@
+swagger: '2.0'
+info:
+  description: Magang API
+  version: 1.0.0
+  title: Magang Dokumentasi API
+basePath: /api/
+tags:
+  - name: Login
+    description: API untuk Login
+  - name: Peserta
+    description: API untuk mengambil data peserta
+  - name: Task
+    description: API untuk mengambil data task
+
+paths:
+  /api/login:
+    post:
+      tags:
+        - Login
+      summary: API untuk login
+      description: 'API untuk melakukan login'
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: "body"
+          name: "body"
+          description: "Melakukan login dengan email dan password"
+          required: true
+          schema:
+            $ref: "#/components/login" 
+      responses:
+        '200':
+          description: successful operation
+        '400':
+          description: Bad request
+
+  /api/list_peserta:
+    get:
+      tags:
+        - Peserta
+      summary: API untuk mengambil semua data peserta
+      description: API untuk mengambil semua data peserta
+      produces:
+        - application/json
+      responses:
+        '200':
+          description: successful operation
+        '400':
+          description: Bad request
+    
+  /api/cari_peserta/{cari_nama}:
+    get:
+      tags:
+        - Peserta
+      summary: API untuk mencari berdasarkan nama peserta
+      description: API untuk mencari berdasarkan nama peserta
+      produces:
+        - application/json
+      responses:
+        '200':
+          description: successful operation
+        '400':
+          description: Bad request
+
+  /api/task/{id_peserta}:
+    get:
+      tags:
+        - Task
+      summary: API untuk mengambil task berdasarkan ID peserta
+      description: API untuk mengambil task berdasarkan ID peserta
+      produces:
+        - application/json
+      responses:
+        '200':
+          description: successful operation
+        '400':
+          description: Bad request
+
+components:
+    login:
+      type: object
+      properties:
+        email:
+          type: string
+        password:
+          type: string
