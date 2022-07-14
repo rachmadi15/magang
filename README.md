@@ -15,12 +15,16 @@ ScreenShot API :
 
 
 - Login 
-![Screenshot (628)](https://user-images.githubusercontent.com/55697055/178970016-539339f4-db5f-4add-8be5-6e81f1744b97.png)
+![Screenshot (632)](https://user-images.githubusercontent.com/55697055/178971555-36ecfe13-224f-4eeb-aef0-fc585dab28f2.png)
 
 
 - List Peserta 
-![Screenshot (629)](https://user-images.githubusercontent.com/55697055/178970116-b7e9e029-edcb-46c8-93ef-5672af2e5985.png)
+![Screenshot (633)](https://user-images.githubusercontent.com/55697055/178971645-c51a88e7-9328-430a-8758-32c25f3cc697.png)
 
 
 - Get Task By Peserta
-![Screenshot (630)](https://user-images.githubusercontent.com/55697055/178970228-67c7a526-93bf-49d0-b6ed-ff7b4071602c.png)
+![Screenshot (634)](https://user-images.githubusercontent.com/55697055/178971702-068eb1ef-81e1-49e6-8fd5-246ecfd381e4.png)
+
+
+- Cari Peserta By Name
+![Screenshot (635)](https://user-images.githubusercontent.com/55697055/178971793-a697a05d-9441-40d9-accf-02c5877ed3d0.png)

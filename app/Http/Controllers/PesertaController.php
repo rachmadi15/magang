@@ -39,9 +39,9 @@ class PesertaController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($cari)
+    public function show(Request $request)
     {
-        $peserta = Peserta::where('name', $cari)->get();
+        $peserta = Peserta::where('name', $request->name)->get();
         return response()->json([
             "success" => true,
             "message" => "Hasil Pencarian Peserta",

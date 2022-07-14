@@ -20,4 +20,4 @@ use App\Http\Controllers\TaskController;
 Route::post('/login', [UserController::class, 'login']);
 Route::get('/list_peserta', [PesertaController::class, 'index']);
 Route::get('/task/{id}', [TaskController::class, 'show']);
-Route::get('/cari_peserta/{cari}', [PesertaController::class, 'show']);
+Route::post('/cari_peserta', [PesertaController::class, 'show']);
