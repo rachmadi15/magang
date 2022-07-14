@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\PesertaController;
+use App\Http\Controllers\TaskController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,9 +17,20 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('template.login');
 });
+
+Route::get('/authenticate', [UserController::class, 'authenticate']);
+
+Route::get('/home', [PesertaController::class, 'home']);
 
 Route::get('/dokumentasi', function () {
     return view('swagger.index');
 });
+
+Route::get('/peserta', [PesertaController::class, 'peserta']);
+Route::get('/gettask/{id}', [TaskController::class, 'task']);
+
+// Route::get('/home', function () {
+//     return view('template.home');
+// });

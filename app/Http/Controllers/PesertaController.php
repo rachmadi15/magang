@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Peserta;
+use Illuminate\Support\Facades\Session;
 
 class PesertaController extends Controller
 {
@@ -47,6 +48,23 @@ class PesertaController extends Controller
             "message" => "Hasil Pencarian Peserta",
             "data" => $peserta
         ], 200);
+    }
+
+    public function home()
+    {
+        $user_id = Session::get('user_id');
+        $peserta = Peserta::where('user_id', $user_id)->first();
+        
+        return view('template/home')->with('name', $peserta->name);
+    }
+
+    public function peserta()
+    {
+        $peserta = Peserta::all();
+        $user_id = Session::get('user_id');
+        $name = Peserta::where('user_id', $user_id)->first();
+        
+        return view('template/peserta')->with('name', $name->name)->with('peserta', $peserta);
     }
 
     /**

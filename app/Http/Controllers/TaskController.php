@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Task;
+use App\Models\Peserta;
+use Illuminate\Support\Facades\Session;
 
 class TaskController extends Controller
 {
@@ -42,6 +44,15 @@ class TaskController extends Controller
             "message" => "Data Task Berdasarkan Peserta",
             "data" => $task
         ], 200);
+    }
+
+    public function task($id)
+    {
+        $task = Task::where('peserta_id', $id)->get();;
+        $user_id = Session::get('user_id');
+        $name = Peserta::where('user_id', $user_id)->first();
+        
+        return view('template/task')->with('name', $name->name)->with('task', $task);
     }
 
     /**
