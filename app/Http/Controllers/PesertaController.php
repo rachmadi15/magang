@@ -67,6 +67,53 @@ class PesertaController extends Controller
         return view('template/peserta')->with('name', $name->name)->with('peserta', $peserta);
     }
 
+    public function tambahPeserta(Request $request)
+    {
+        $validateData = $request->validate([
+            'name' => 'required|max:255',
+            'email' => 'required|max:255',
+            'address' => 'required',
+            'position' => 'required'
+        ]);
+        
+        $validateData['user_id'] = Session::get('user_id');
+        
+        Peserta::create($validateData);
+
+        
+        return redirect()->intended('/peserta');
+    }
+
+    public function deletePeserta($id)
+    {
+        $data_peserta = Peserta::findOrFail($id);
+        $data_peserta->delete();
+        
+        return redirect()->intended('/peserta');
+
+    }
+
+    public function updatePeserta(Request $request)
+    {
+        $validateData = $request->validate([
+            'name' => 'required|max:255',
+            'email' => 'required|max:255',
+            'address' => 'required',
+            'position' => 'required'
+        ]);
+   
+        $peserta = Peserta::findOrFail($request->peserta_id);
+
+        $peserta->update([
+            'name' => $request->name,
+            'email' => $request->email,
+            'address' => $request->address,
+            'position' => $request->position
+        ]);
+
+        return redirect()->intended('/peserta');
+    }
+
     /**
      * Update the specified resource in storage.
      *

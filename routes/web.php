@@ -31,6 +31,15 @@ Route::get('/dokumentasi', function () {
 Route::get('/peserta', [PesertaController::class, 'peserta']);
 Route::get('/gettask/{id}', [TaskController::class, 'task']);
 
+Route::post('/tambahPeserta', [PesertaController::class, 'tambahPeserta']);
+Route::get('/deletePeserta/{id}', [PesertaController::class, 'deletePeserta']);
+Route::post('/updatePeserta', [PesertaController::class, 'updatePeserta']);
+
+
+Route::post('/tambahTask', [TaskController::class, 'tambahTask']);
+Route::get('/deleteTask/{id}', [TaskController::class, 'deleteTask']);
+Route::post('/updateTask', [TaskController::class, 'updateTask']);
+
 // Route::get('/home', function () {
 //     return view('template.home');
 // });
