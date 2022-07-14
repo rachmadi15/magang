@@ -28,3 +28,14 @@ ScreenShot API :
 
 - Cari Peserta By Name
 ![Screenshot (635)](https://user-images.githubusercontent.com/55697055/178971793-a697a05d-9441-40d9-accf-02c5877ed3d0.png)
+
+
+
+Depedency :
+
+composer require tymon/jwt-auth
+
+
+Informasi Lainnya :
+
+Menghapus .example dibelakang .env sebelum menggunakan API ini, kemudian menginstall composer sebelum menggunakan API.
