@@ -53,3 +53,8 @@ composer require tymon/jwt-auth
 Informasi Lainnya :
 
 Menghapus .example dibelakang .env sebelum menggunakan API ini, kemudian menginstall composer sebelum menggunakan API.
+Untuk API dokumentasi swagger dapat diakses dengan route "/dokumentasi", untuk tampilannya dapat dilihat dibawah :
+
+
+
+![Screenshot (644)](https://user-images.githubusercontent.com/55697055/179125290-6c88e76a-ddd2-4161-a47b-dfc1b040a5a7.png)
