@@ -16,26 +16,26 @@ ScreenShot API :
 
 - Halaman Login dan API Login 
 
-![Screenshot (636)](https://user-images.githubusercontent.com/55697055/179026776-03e1c37e-3370-40df-8a09-be9293ac6b64.png)
+![Screenshot (640)](https://user-images.githubusercontent.com/55697055/179123322-9b72afaa-29cd-4391-bb5f-6a4d67bce876.png)
 
 ![Screenshot (632)](https://user-images.githubusercontent.com/55697055/178971555-36ecfe13-224f-4eeb-aef0-fc585dab28f2.png)
 
 
 - Halaman Home
 
-![Screenshot (637)](https://user-images.githubusercontent.com/55697055/179026975-565eaa75-a3e0-4aaf-9004-8910391a6509.png)
+![Screenshot (641)](https://user-images.githubusercontent.com/55697055/179123360-7b095382-eca7-4de2-a8e3-a569e7ab9e36.png)
 
 
 - Halaman List Peserta dan API List Peserta
 
-![Screenshot (638)](https://user-images.githubusercontent.com/55697055/179027109-8f5727f9-3644-45e5-93a5-d40513a61b4e.png)
+![Screenshot (642)](https://user-images.githubusercontent.com/55697055/179123392-974ec3e4-1542-4cd6-8e2f-b13479de7a92.png)
 
 ![Screenshot (633)](https://user-images.githubusercontent.com/55697055/178971645-c51a88e7-9328-430a-8758-32c25f3cc697.png)
 
 
 - Halaman dan API Get Task By Peserta
 
-![Screenshot (639)](https://user-images.githubusercontent.com/55697055/179027192-fb8e776f-ad20-43e9-b446-0e97a2a0e902.png)
+![Screenshot (643)](https://user-images.githubusercontent.com/55697055/179123444-c2dc0091-ee85-43c7-ae4a-a9183477e8a5.png)
 
 ![Screenshot (634)](https://user-images.githubusercontent.com/55697055/178971702-068eb1ef-81e1-49e6-8fd5-246ecfd381e4.png)
 
